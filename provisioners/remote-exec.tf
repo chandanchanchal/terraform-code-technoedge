@@ -13,7 +13,7 @@ resource "aws_instance" "myec2" {
    connection {
      type = "ssh"
      user = "ec2-user"
-     private_key = file("./kplabs-terraform.pem")
+     private_key = file("./your-ownfile.pem")
      host = self.public_ip
    }
    }
